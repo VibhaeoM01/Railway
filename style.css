@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Styles for the main container */
 body {
     font-family: Arial, sans-serif;
@@ -28,16 +29,43 @@ form {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+=======
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.heading {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 15px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 }
 
 label {
     display: block;
     margin-bottom: 5px;
+<<<<<<< HEAD
     color: #555; /* Form label color */
+=======
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 }
 
 input[type="text"],
 input[type="password"],
+<<<<<<< HEAD
 input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -68,20 +96,67 @@ input[type="submit"]:hover {
 }
 
 /* Styles for tables */
+=======
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="submit"] {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Sections */
+#login_section,
+#registration_section,
+#booking_section,
+#cancellation_section,
+#history_section,
+#admin_panel_section {
+    margin-bottom: 30px;
+}
+
+/* Tables */
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 table {
     width: 100%;
     border-collapse: collapse;
     background-color: #fff;
+<<<<<<< HEAD
 }
 
 th, td {
     padding: 12px;
     border-bottom: 1px solid #ddd;
+=======
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
     text-align: left;
 }
 
 th {
     background-color: #f2f2f2;
+<<<<<<< HEAD
     color: #333; /* Dark text color */
 }
 
@@ -92,6 +167,11 @@ th {
     margin-top: 10px;
 }
 
+=======
+}
+
+/* Specific sections */
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 #admin_panel_section form {
     display: inline-block;
     margin-right: 10px;

@@ -1,9 +1,15 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
+<<<<<<< HEAD
 $port = 4306; // Adjust the port as needed
 $username = "root";
 $password = "bt1511yashi@";
+=======
+$port = 3307; // Adjust the port as needed
+$username = "root";
+$password = "";
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 $database = "railway";
 
 // Create connection
@@ -52,7 +58,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt->bind_param("iisd", $user_id, $train_id, $date, $fare);
     if ($stmt->execute()) {
         // Redirect back to booking history page after booking a ticket
+<<<<<<< HEAD
         header("Location: booking_history.php");
+=======
+        header("Location: book.php");
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
         exit();
     } else {
         echo "Error booking ticket: " . $stmt->error;

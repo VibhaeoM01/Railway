@@ -1,9 +1,17 @@
 <?php
 // Database connection parameters
+<<<<<<< HEAD
 $servername = "localhost";
 $port = 4306; // Adjust the port as needed
 $username = "root";
 $password = "bt1511yashi@";
+=======
+
+$servername = "localhost";
+$port = 3307; // Adjust the port as needed
+$username = "root";
+$password = "";
+>>>>>>> e6350249bf4164cd7287524770ba5d85de09d67a
 $database = "railway";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $database, $port);
