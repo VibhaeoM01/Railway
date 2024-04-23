@@ -1,12 +1,6 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-<<<<<<< HEAD
-$username = "root";
-$password = "bt1511yashi@";
-$database = "railway";
-$port = 4306; // Ensure it's an integer
-=======
 $port = 3307; // Adjust the port as needed
 $username = "root";
 $password = "";

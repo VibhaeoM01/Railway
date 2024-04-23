@@ -1,11 +1,8 @@
 <?php
 // Database connection parameters
 $servername = "localhost";
-<<<<<<< HEAD
-$port = 4306; // Adjust the port as needed
-$username = "root";
-$password = "bt1511yashi@";
-=======
+
+
 $port = 3307; // Adjust the port as needed
 $username = "root";
 $password = "";
