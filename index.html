@@ -115,12 +115,48 @@ th {
     margin-right: 10px;
 }
 
+#nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    text-align: center; /* Center align all list items */
+}
+
+#nav ul li {
+    display: inline-block; /* Display list items horizontally */
+}
+
+#nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#nav ul li a:hover {
+    background-color: #555;
+    text-decoration: underline; /* Underline on hover */
+    color: #ccc; /* Change text color on hover */
+}
+
+
     </style>
 </head>
 <body>
     <h1 class="heading">Online Railway Ticket Reservation System</h1>
     
-    
+    <div id="nav">
+        <ul>
+          <li>Home</li>
+          <li><a target="_blank" href="Reservation.html">Reservation</a></li>
+          <li> <a target="_blank" href="canc.html">Cancellation</a></li>
+       <li><a target="_blank" href="Register.html">Register</a></li>
+       <li><a target="_blank"  href="Login.html">Login</a></li>
+       </ul>
+      </header>
 
 
 
@@ -129,30 +165,7 @@ th {
 
 
 
-    <!-- User Login Section -->
-    <div id="login_section">
-        <h2>User Login</h2>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required><br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required><br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
 
-    <!-- User Registration Section -->
-    <div id="registration_section">
-        <h2>User Registration</h2>
-        <form action="register.php" method="post">
-            <label for="reg_username">Username:</label>
-            <input type="text" id="reg_username" name="reg_username" required><br>
-            <label for="reg_password">Password:</label>
-            <input type="password" id="reg_password" name="reg_password" required><br>
-            <!-- Add more registration fields as needed -->
-            <input type="submit" value="Register">
-        </form>
-    </div>
 
     <!-- Password Recovery Section
     <div id="password_recovery_section">
@@ -164,7 +177,7 @@ th {
         </form>
     </div> -->
 
-    <!-- Ticket Booking Section -->
+    <!-- Ticket Booking Section
     <div id="booking_section">
         <h2>Book Ticket</h2>
         <form action="book_ticket.php" method="post">
@@ -182,19 +195,11 @@ th {
             
             <input type="submit" value="Book Ticket">
         </form>
-    </div>
+    </div> -->
 
-    <!-- Ticket Cancellation Section -->
-    <div id="cancellation_section">
-        <h2>Cancel Ticket</h2>
-        <form action="cancel_ticket.php" method="post">
-            <label for="cancel_ticket_id">Ticket ID:</label>
-            <input type="text" id="cancel_ticket_id" name="cancel_ticket_id" required><br>
-            <input type="submit" value="Cancel Ticket">
-        </form>
-    </div>
+ 
 
- <!-- Booking History Section -->
+ <!-- Booking History Section
 <div id="history_section">
     <h2>Booking History</h2>
     <table id="booking_history_table">
@@ -211,7 +216,7 @@ th {
             <!-- Table body will be populated dynamically using JavaScript -->
         </tbody>
     </table>
-</div>
+</div> -->
 
 <script>
     // Function to handle ticket cancellation
@@ -267,19 +272,17 @@ th {
 </script>
 
 
-    <!-- Admin Panel Section -->
+    <!-- Admin Panel Section
     <div id="admin_panel_section">
         <h2>Admin Panel</h2>
-        <!-- Placeholder: Display admin functionalities (e.g., modify train details, view all bookings) -->
-        <!-- Example: Form to modify train details, Table to view all bookings -->
+
         <form action="modify_train.php" method="post">
-            <!-- Add fields to modify train details -->
+           
             <label for="train_id">Train ID:</label>
             <input type="text" id="train_id" name="train_id" required><br>
             <label for="new_destination">New Destination:</label>
             <input type="text" id="new_destination" name="new_destination" required><br>
-            <!-- Add more form fields as needed -->
             <input type="submit" value="Modify Train Details">
-        </form>
+        </form> -->
 </body>
 </html>
